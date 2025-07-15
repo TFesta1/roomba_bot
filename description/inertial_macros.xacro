@@ -3,10 +3,12 @@
 
     <!-- Specify some standard inertial calculations https://en.wikipedia.org/wiki/List_of_moments_of_inertia -->
     <!-- These make use of xacro's mathematical functionality -->
-
+    <!-- xacro:macro is like a function, params mass radius and *origin lets you nest an origin tag inside of the macro -->
     <xacro:macro name="inertial_sphere" params="mass radius *origin">
         <inertial>
+            <!-- Expands what was passed in origin -->
             <xacro:insert_block name="origin"/>
+            <!-- Moment of inertia about its center -->
             <mass value="${mass}" />
             <inertia ixx="${(2/5) * mass * (radius*radius)}" ixy="0.0" ixz="0.0"
                     iyy="${(2/5) * mass * (radius*radius)}" iyz="0.0"

@@ -67,7 +67,7 @@
     <parent link="base_link"/>
     <child link="left_wheel"/>
     <!-- lift wheel by its radius, rotate 90° (this is in radians, and 1.57 radians ~ 90deg or pi/2) around Y to align cylinder axis -->
-    <origin xyz="0 ${wheel_y_offset} ${wheel_z}" rpy="1.5708 0 0"/>
+    <origin xyz="${-max_wheel_movement_down} ${wheel_y_offset} ${wheel_z}" rpy="1.5708 0 0"/>
     <axis   xyz="0 0 1"/>
   </joint>
   <!-- Physical rigid body -->
@@ -100,7 +100,7 @@
   <joint name="right_wheel_joint" type="continuous">
     <parent link="base_link"/>
     <child link="right_wheel"/>
-    <origin xyz="0 -${wheel_y_offset} ${wheel_z}" rpy="1.5708 0 0"/>
+    <origin xyz="${-max_wheel_movement_down} -${wheel_y_offset} ${wheel_z}" rpy="1.5708 0 0"/>
     <axis   xyz="0 0 1"/>
   </joint>
   <link name="right_wheel">
@@ -159,7 +159,7 @@
     <mu2 value="0.001"/>
   </gazebo>
 
-  <!-- <joint name="caster_wheel_joint_invisible" type="fixed">
+  <joint name="caster_wheel_joint_invisible" type="fixed">
     <parent link="base_link"/>
     <child link="caster_wheel_invisible"/>
     <origin xyz="${-caster_x_offset} 0 ${-caster_radius/2}" rpy="0 0 0"/>
@@ -190,7 +190,7 @@
   </gazebo>
 
 
-  <joint name="caster_wheel_joint_invisible_l" type="fixed">
+  <!-- <joint name="caster_wheel_joint_invisible_l" type="fixed">
     <parent link="base_link"/>
     <child link="caster_wheel_invisible_l"/>
     <origin xyz="0 ${-caster_x_offset} ${-caster_radius/2}" rpy="0 0 0"/>
@@ -218,10 +218,10 @@
     <material>Gazebo/BlueTransparent</material>
     <mu1 value="0.001"/>
     <mu2 value="0.001"/>
-  </gazebo>
+  </gazebo> -->
 
 
-  <joint name="caster_wheel_joint_invisible_r" type="fixed">
+  <!-- <joint name="caster_wheel_joint_invisible_r" type="fixed">
     <parent link="base_link"/>
     <child link="caster_wheel_invisible_r"/>
     <origin xyz="0 ${caster_x_offset} ${-caster_radius/2}" rpy="0 0 0"/>

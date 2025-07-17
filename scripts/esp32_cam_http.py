@@ -29,7 +29,8 @@ class ESP32CamHTTP(Node):
 
         # CameraInfo manager (load YAML if provided)
         self.ci_man = CameraInfoManager(self, 'esp32_cam', info_url)
-        self.ci_man.loadCameraInfo()
+        ok = self.ci_man.loadCameraInfo()
+        # print(ok)
         # if not ok:
         #     self.get_logger().warn(f'Failed to loadCameraInfo() {ok}')
         if not self.ci_man.isCalibrated():

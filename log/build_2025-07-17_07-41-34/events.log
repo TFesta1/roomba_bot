@@ -1,0 +1,195 @@
+[0.000000] (-) TimerEvent: {}
+[0.002077] (roomba_bot) JobQueued: {'identifier': 'roomba_bot', 'dependencies': OrderedDict()}
+[0.002393] (roomba_bot) JobStarted: {'identifier': 'roomba_bot'}
+[0.053246] (roomba_bot) JobProgress: {'identifier': 'roomba_bot', 'progress': 'cmake'}
+[0.060283] (roomba_bot) Command: {'cmd': ['/usr/bin/cmake', '/home/tanner/dev_ws/src/roomba_bot', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/tanner/dev_ws/src/roomba_bot/install/roomba_bot'], 'cwd': '/home/tanner/dev_ws/src/roomba_bot/build/roomba_bot', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'tanner'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/tanner/ros2_ws/install/my_robot_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/tanner'), ('OLDPWD', '/home/tanner/dev_ws/src'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/tanner/dev_ws/install:/home/tanner/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'tanner'), ('NAME', 'Tanner'), ('WSL_INTEROP', '/run/WSL/333_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/PuTTY/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Users/ringk/AppData/Local/Programs/Python/Python311/Scripts/:/mnt/c/Users/ringk/AppData/Local/Programs/Python/Python311/:/mnt/c/Users/ringk/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/ringk/AppData/Roaming/npm:/mnt/c/Users/ringk/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/tanner/dev_ws/install/roomba_bot:/home/tanner/ros2_ws/install/actions_py:/home/tanner/ros2_ws/install/my_robot_interfaces:/home/tanner/ros2_ws/install/my_robot_controller:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/tanner/dev_ws/src/roomba_bot/build/roomba_bot'), ('TURTLEBOT3_MODEL', 'waffle'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/tanner/ros2_ws/build/actions_py:/home/tanner/ros2_ws/install/actions_py/lib/python3.10/site-packages:/home/tanner/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages:/home/tanner/ros2_ws/build/my_robot_controller:/home/tanner/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/tanner/dev_ws/install/roomba_bot:/home/tanner/ros2_ws/install/my_robot_interfaces:/home/tanner/ros2_ws/install/actions_py:/home/tanner/ros2_ws/install/my_robot_controller:/opt/ros/humble'), ('WSLENV', '')]), 'shell': False}
+[0.097950] (-) TimerEvent: {}
+[0.198995] (-) TimerEvent: {}
+[0.299869] (-) TimerEvent: {}
+[0.400823] (-) TimerEvent: {}
+[0.501889] (-) TimerEvent: {}
+[0.609262] (-) TimerEvent: {}
+[0.711869] (-) TimerEvent: {}
+[0.819996] (-) TimerEvent: {}
+[0.907798] (roomba_bot) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.921277] (-) TimerEvent: {}
+[1.029464] (-) TimerEvent: {}
+[1.130999] (-) TimerEvent: {}
+[1.238599] (-) TimerEvent: {}
+[1.346029] (-) TimerEvent: {}
+[1.451263] (-) TimerEvent: {}
+[1.551950] (-) TimerEvent: {}
+[1.653156] (-) TimerEvent: {}
+[1.760695] (-) TimerEvent: {}
+[1.861417] (-) TimerEvent: {}
+[1.966161] (-) TimerEvent: {}
+[2.066888] (-) TimerEvent: {}
+[2.169512] (-) TimerEvent: {}
+[2.273660] (-) TimerEvent: {}
+[2.378678] (-) TimerEvent: {}
+[2.480056] (-) TimerEvent: {}
+[2.581737] (-) TimerEvent: {}
+[2.684210] (-) TimerEvent: {}
+[2.788513] (-) TimerEvent: {}
+[2.890194] (-) TimerEvent: {}
+[2.994403] (-) TimerEvent: {}
+[3.099405] (-) TimerEvent: {}
+[3.202174] (-) TimerEvent: {}
+[3.306959] (-) TimerEvent: {}
+[3.408862] (-) TimerEvent: {}
+[3.513153] (-) TimerEvent: {}
+[3.614584] (-) TimerEvent: {}
+[3.719719] (-) TimerEvent: {}
+[3.823019] (-) TimerEvent: {}
+[3.918528] (roomba_bot) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[3.923911] (-) TimerEvent: {}
+[4.028905] (-) TimerEvent: {}
+[4.136952] (-) TimerEvent: {}
+[4.243887] (-) TimerEvent: {}
+[4.352239] (-) TimerEvent: {}
+[4.457019] (-) TimerEvent: {}
+[4.563052] (-) TimerEvent: {}
+[4.666966] (-) TimerEvent: {}
+[4.769443] (-) TimerEvent: {}
+[4.874601] (-) TimerEvent: {}
+[4.979925] (-) TimerEvent: {}
+[5.085037] (-) TimerEvent: {}
+[5.189747] (-) TimerEvent: {}
+[5.292410] (-) TimerEvent: {}
+[5.397368] (-) TimerEvent: {}
+[5.499030] (-) TimerEvent: {}
+[5.606368] (-) TimerEvent: {}
+[5.707742] (-) TimerEvent: {}
+[5.791678] (roomba_bot) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[5.808308] (-) TimerEvent: {}
+[5.909497] (-) TimerEvent: {}
+[6.010481] (-) TimerEvent: {}
+[6.112217] (-) TimerEvent: {}
+[6.214007] (-) TimerEvent: {}
+[6.316396] (-) TimerEvent: {}
+[6.417734] (-) TimerEvent: {}
+[6.519181] (-) TimerEvent: {}
+[6.572683] (roomba_bot) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[6.616536] (roomba_bot) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[6.619760] (-) TimerEvent: {}
+[6.622179] (roomba_bot) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[6.627979] (roomba_bot) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[6.650683] (roomba_bot) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[6.720399] (-) TimerEvent: {}
+[6.824282] (-) TimerEvent: {}
+[6.927423] (-) TimerEvent: {}
+[7.029128] (-) TimerEvent: {}
+[7.130528] (-) TimerEvent: {}
+[7.231906] (-) TimerEvent: {}
+[7.333151] (-) TimerEvent: {}
+[7.434463] (-) TimerEvent: {}
+[7.535637] (-) TimerEvent: {}
+[7.545911] (roomba_bot) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[7.596172] (roomba_bot) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[7.597946] (roomba_bot) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[7.603064] (roomba_bot) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[7.636400] (-) TimerEvent: {}
+[7.720382] (roomba_bot) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[7.737485] (-) TimerEvent: {}
+[7.839288] (-) TimerEvent: {}
+[7.941696] (-) TimerEvent: {}
+[8.043498] (-) TimerEvent: {}
+[8.145104] (-) TimerEvent: {}
+[8.246329] (-) TimerEvent: {}
+[8.350151] (-) TimerEvent: {}
+[8.451474] (-) TimerEvent: {}
+[8.553409] (-) TimerEvent: {}
+[8.654793] (-) TimerEvent: {}
+[8.756921] (-) TimerEvent: {}
+[8.861709] (-) TimerEvent: {}
+[8.898015] (roomba_bot) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[8.962399] (-) TimerEvent: {}
+[9.064447] (-) TimerEvent: {}
+[9.165756] (-) TimerEvent: {}
+[9.267466] (-) TimerEvent: {}
+[9.273979] (roomba_bot) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[9.368029] (-) TimerEvent: {}
+[9.469364] (-) TimerEvent: {}
+[9.526702] (roomba_bot) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[9.572872] (-) TimerEvent: {}
+[9.674388] (-) TimerEvent: {}
+[9.778026] (-) TimerEvent: {}
+[9.879548] (-) TimerEvent: {}
+[9.981260] (-) TimerEvent: {}
+[10.084041] (-) TimerEvent: {}
+[10.114229] (roomba_bot) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[10.185143] (-) TimerEvent: {}
+[10.223980] (roomba_bot) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[10.230459] (roomba_bot) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[10.230862] (roomba_bot) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[10.285699] (-) TimerEvent: {}
+[10.297367] (roomba_bot) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[10.298137] (roomba_bot) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[10.312035] (roomba_bot) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[10.332539] (roomba_bot) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[10.346948] (roomba_bot) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[10.386077] (-) TimerEvent: {}
+[10.411821] (roomba_bot) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[10.412492] (roomba_bot) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[10.422902] (roomba_bot) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[10.435555] (roomba_bot) StdoutLine: {'line': b'-- Configuring done\n'}
+[10.455231] (roomba_bot) StdoutLine: {'line': b'-- Generating done\n'}
+[10.463129] (roomba_bot) StdoutLine: {'line': b'-- Build files have been written to: /home/tanner/dev_ws/src/roomba_bot/build/roomba_bot\n'}
+[10.486593] (roomba_bot) CommandEnded: {'returncode': 0}
+[10.490784] (-) TimerEvent: {}
+[10.503244] (roomba_bot) JobProgress: {'identifier': 'roomba_bot', 'progress': 'build'}
+[10.503691] (roomba_bot) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/tanner/dev_ws/src/roomba_bot/build/roomba_bot', '--', '-j20', '-l20'], 'cwd': '/home/tanner/dev_ws/src/roomba_bot/build/roomba_bot', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'tanner'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/tanner/ros2_ws/install/my_robot_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/tanner'), ('OLDPWD', '/home/tanner/dev_ws/src'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/tanner/dev_ws/install:/home/tanner/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'tanner'), ('NAME', 'Tanner'), ('WSL_INTEROP', '/run/WSL/333_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/PuTTY/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Users/ringk/AppData/Local/Programs/Python/Python311/Scripts/:/mnt/c/Users/ringk/AppData/Local/Programs/Python/Python311/:/mnt/c/Users/ringk/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/ringk/AppData/Roaming/npm:/mnt/c/Users/ringk/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/tanner/dev_ws/install/roomba_bot:/home/tanner/ros2_ws/install/actions_py:/home/tanner/ros2_ws/install/my_robot_interfaces:/home/tanner/ros2_ws/install/my_robot_controller:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/tanner/dev_ws/src/roomba_bot/build/roomba_bot'), ('TURTLEBOT3_MODEL', 'waffle'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/tanner/ros2_ws/build/actions_py:/home/tanner/ros2_ws/install/actions_py/lib/python3.10/site-packages:/home/tanner/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages:/home/tanner/ros2_ws/build/my_robot_controller:/home/tanner/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/tanner/dev_ws/install/roomba_bot:/home/tanner/ros2_ws/install/my_robot_interfaces:/home/tanner/ros2_ws/install/actions_py:/home/tanner/ros2_ws/install/my_robot_controller:/opt/ros/humble'), ('WSLENV', '')]), 'shell': False}
+[10.591672] (-) TimerEvent: {}
+[10.694200] (-) TimerEvent: {}
+[10.708114] (roomba_bot) CommandEnded: {'returncode': 0}
+[10.714314] (roomba_bot) JobProgress: {'identifier': 'roomba_bot', 'progress': 'install'}
+[10.759226] (roomba_bot) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/tanner/dev_ws/src/roomba_bot/build/roomba_bot'], 'cwd': '/home/tanner/dev_ws/src/roomba_bot/build/roomba_bot', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'tanner'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/tanner/ros2_ws/install/my_robot_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/tanner'), ('OLDPWD', '/home/tanner/dev_ws/src'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/tanner/dev_ws/install:/home/tanner/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'tanner'), ('NAME', 'Tanner'), ('WSL_INTEROP', '/run/WSL/333_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/PuTTY/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Users/ringk/AppData/Local/Programs/Python/Python311/Scripts/:/mnt/c/Users/ringk/AppData/Local/Programs/Python/Python311/:/mnt/c/Users/ringk/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/ringk/AppData/Roaming/npm:/mnt/c/Users/ringk/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/tanner/dev_ws/install/roomba_bot:/home/tanner/ros2_ws/install/actions_py:/home/tanner/ros2_ws/install/my_robot_interfaces:/home/tanner/ros2_ws/install/my_robot_controller:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/tanner/dev_ws/src/roomba_bot/build/roomba_bot'), ('TURTLEBOT3_MODEL', 'waffle'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/tanner/ros2_ws/build/actions_py:/home/tanner/ros2_ws/install/actions_py/lib/python3.10/site-packages:/home/tanner/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages:/home/tanner/ros2_ws/build/my_robot_controller:/home/tanner/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/tanner/dev_ws/install/roomba_bot:/home/tanner/ros2_ws/install/my_robot_interfaces:/home/tanner/ros2_ws/install/actions_py:/home/tanner/ros2_ws/install/my_robot_controller:/opt/ros/humble'), ('WSLENV', '')]), 'shell': False}
+[10.791245] (roomba_bot) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[10.794948] (-) TimerEvent: {}
+[10.796421] (roomba_bot) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[10.804876] (roomba_bot) StdoutLine: {'line': b'-- Symlinking: /home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/roomba_bot/config/empty.yaml\n'}
+[10.849473] (roomba_bot) StdoutLine: {'line': b'-- Symlinking: /home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/roomba_bot/config/view_bot.rviz\n'}
+[10.887986] (roomba_bot) StdoutLine: {'line': b'-- Symlinking: /home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/roomba_bot/description/gazebo_control.xacro\n'}
+[10.895787] (-) TimerEvent: {}
+[10.934757] (roomba_bot) StdoutLine: {'line': b'-- Symlinking: /home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/roomba_bot/description/inertial_macros.xacro\n'}
+[10.991341] (roomba_bot) StdoutLine: {'line': b'-- Symlinking: /home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/roomba_bot/description/lidar.xacro\n'}
+[10.996477] (-) TimerEvent: {}
+[11.033338] (roomba_bot) StdoutLine: {'line': b'-- Symlinking: /home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/roomba_bot/description/properties.xacro\n'}
+[11.077622] (roomba_bot) StdoutLine: {'line': b'-- Symlinking: /home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/roomba_bot/description/robot.urdf.xacro\n'}
+[11.098318] (-) TimerEvent: {}
+[11.113204] (roomba_bot) StdoutLine: {'line': b'-- Symlinking: /home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/roomba_bot/description/robot_core.xacro\n'}
+[11.157231] (roomba_bot) StdoutLine: {'line': b'-- Symlinking: /home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/roomba_bot/launch/launch_sim.launch.py\n'}
+[11.201734] (-) TimerEvent: {}
+[11.207478] (roomba_bot) StdoutLine: {'line': b'-- Symlinking: /home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/roomba_bot/launch/rsp.launch.py\n'}
+[11.255887] (roomba_bot) StdoutLine: {'line': b'-- Symlinking: /home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/roomba_bot/worlds/drive_bot.rviz\n'}
+[11.303844] (roomba_bot) StdoutLine: {'line': b'-- Symlinking: /home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/roomba_bot/worlds/empty.world\n'}
+[11.305132] (-) TimerEvent: {}
+[11.349940] (roomba_bot) StdoutLine: {'line': b'-- Symlinking: /home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/roomba_bot/worlds/obstacles.world\n'}
+[11.396676] (roomba_bot) StdoutLine: {'line': b'-- Symlinking: /home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/ament_index/resource_index/package_run_dependencies/roomba_bot\n'}
+[11.405735] (-) TimerEvent: {}
+[11.449537] (roomba_bot) StdoutLine: {'line': b'-- Symlinking: /home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/ament_index/resource_index/parent_prefix_path/roomba_bot\n'}
+[11.494041] (roomba_bot) StdoutLine: {'line': b'-- Symlinking: /home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/roomba_bot/environment/ament_prefix_path.sh\n'}
+[11.506852] (-) TimerEvent: {}
+[11.541209] (roomba_bot) StdoutLine: {'line': b'-- Symlinking: /home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/roomba_bot/environment/ament_prefix_path.dsv\n'}
+[11.593736] (roomba_bot) StdoutLine: {'line': b'-- Symlinking: /home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/roomba_bot/environment/path.sh\n'}
+[11.607742] (-) TimerEvent: {}
+[11.646765] (roomba_bot) StdoutLine: {'line': b'-- Symlinking: /home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/roomba_bot/environment/path.dsv\n'}
+[11.695886] (roomba_bot) StdoutLine: {'line': b'-- Symlinking: /home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/roomba_bot/local_setup.bash\n'}
+[11.709232] (-) TimerEvent: {}
+[11.737908] (roomba_bot) StdoutLine: {'line': b'-- Symlinking: /home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/roomba_bot/local_setup.sh\n'}
+[11.788088] (roomba_bot) StdoutLine: {'line': b'-- Symlinking: /home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/roomba_bot/local_setup.zsh\n'}
+[11.811118] (-) TimerEvent: {}
+[11.851793] (roomba_bot) StdoutLine: {'line': b'-- Symlinking: /home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/roomba_bot/local_setup.dsv\n'}
+[11.910910] (roomba_bot) StdoutLine: {'line': b'-- Symlinking: /home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/roomba_bot/package.dsv\n'}
+[11.912430] (-) TimerEvent: {}
+[11.964535] (roomba_bot) StdoutLine: {'line': b'-- Symlinking: /home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/ament_index/resource_index/packages/roomba_bot\n'}
+[12.013340] (-) TimerEvent: {}
+[12.017609] (roomba_bot) StdoutLine: {'line': b'-- Symlinking: /home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/roomba_bot/cmake/roomba_botConfig.cmake\n'}
+[12.083641] (roomba_bot) StdoutLine: {'line': b'-- Symlinking: /home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/roomba_bot/cmake/roomba_botConfig-version.cmake\n'}
+[12.113856] (-) TimerEvent: {}
+[12.151772] (roomba_bot) StdoutLine: {'line': b'-- Symlinking: /home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/roomba_bot/package.xml\n'}
+[12.214281] (-) TimerEvent: {}
+[12.223982] (roomba_bot) CommandEnded: {'returncode': 0}
+[12.317883] (-) TimerEvent: {}
+[12.395621] (roomba_bot) JobEnded: {'identifier': 'roomba_bot', 'rc': 0}
+[12.404494] (-) EventReactorShutdown: {}

@@ -1,0 +1,2 @@
+source;share/roomba_bot/environment/ament_prefix_path.sh
+source;share/roomba_bot/environment/path.sh

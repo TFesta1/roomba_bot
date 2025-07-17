@@ -1,0 +1,107 @@
+[0.873s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.873s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=20, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x72ad90f610c0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x72ad90f60b50>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x72ad90f60b50>>)
+[2.999s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[2.999s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[3.000s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[3.000s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[3.000s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[3.000s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[3.000s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/tanner/dev_ws/src/roomba_bot'
+[3.000s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[3.000s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[3.000s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[3.000s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[3.001s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[3.001s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[3.001s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[3.001s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[3.001s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[3.045s] DEBUG:colcon.colcon_core.package_identification:Package '.' with type 'ros.ament_cmake' and name 'roomba_bot'
+[3.045s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[3.046s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[3.046s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[3.046s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[3.046s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[3.154s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[3.155s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[3.176s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/tanner/dev_ws/install
+[3.179s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 3 installed packages in /home/tanner/ros2_ws/install
+[3.188s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 427 installed packages in /opt/ros/humble
+[3.234s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[3.486s] Level 5:colcon.colcon_core.verb:set package 'roomba_bot' build argument 'cmake_args' from command line to 'None'
+[3.487s] Level 5:colcon.colcon_core.verb:set package 'roomba_bot' build argument 'cmake_target' from command line to 'None'
+[3.487s] Level 5:colcon.colcon_core.verb:set package 'roomba_bot' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[3.487s] Level 5:colcon.colcon_core.verb:set package 'roomba_bot' build argument 'cmake_clean_cache' from command line to 'False'
+[3.487s] Level 5:colcon.colcon_core.verb:set package 'roomba_bot' build argument 'cmake_clean_first' from command line to 'False'
+[3.487s] Level 5:colcon.colcon_core.verb:set package 'roomba_bot' build argument 'cmake_force_configure' from command line to 'False'
+[3.487s] Level 5:colcon.colcon_core.verb:set package 'roomba_bot' build argument 'ament_cmake_args' from command line to 'None'
+[3.487s] Level 5:colcon.colcon_core.verb:set package 'roomba_bot' build argument 'catkin_cmake_args' from command line to 'None'
+[3.487s] Level 5:colcon.colcon_core.verb:set package 'roomba_bot' build argument 'catkin_skip_building_tests' from command line to 'False'
+[3.487s] DEBUG:colcon.colcon_core.verb:Building package 'roomba_bot' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/tanner/dev_ws/src/roomba_bot/build/roomba_bot', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/tanner/dev_ws/src/roomba_bot/install/roomba_bot', 'merge_install': False, 'path': '/home/tanner/dev_ws/src/roomba_bot', 'symlink_install': True, 'test_result_base': None}
+[3.488s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[3.492s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[3.495s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/tanner/dev_ws/src/roomba_bot' with build type 'ament_cmake'
+[3.496s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/tanner/dev_ws/src/roomba_bot'
+[3.523s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[3.524s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.524s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.559s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tanner/dev_ws/src/roomba_bot/build/roomba_bot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tanner/ros2_ws/install/actions_py:/home/tanner/ros2_ws/install/my_robot_controller:/opt/ros/humble /usr/bin/cmake /home/tanner/dev_ws/src/roomba_bot -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/tanner/dev_ws/src/roomba_bot/install/roomba_bot
+[13.983s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tanner/dev_ws/src/roomba_bot/build/roomba_bot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tanner/ros2_ws/install/actions_py:/home/tanner/ros2_ws/install/my_robot_controller:/opt/ros/humble /usr/bin/cmake /home/tanner/dev_ws/src/roomba_bot -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/tanner/dev_ws/src/roomba_bot/install/roomba_bot
+[13.999s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tanner/dev_ws/src/roomba_bot/build/roomba_bot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tanner/ros2_ws/install/actions_py:/home/tanner/ros2_ws/install/my_robot_controller:/opt/ros/humble /usr/bin/cmake --build /home/tanner/dev_ws/src/roomba_bot/build/roomba_bot -- -j20 -l20
+[14.206s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tanner/dev_ws/src/roomba_bot/build/roomba_bot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tanner/ros2_ws/install/actions_py:/home/tanner/ros2_ws/install/my_robot_controller:/opt/ros/humble /usr/bin/cmake --build /home/tanner/dev_ws/src/roomba_bot/build/roomba_bot -- -j20 -l20
+[14.259s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tanner/dev_ws/src/roomba_bot/build/roomba_bot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tanner/ros2_ws/install/actions_py:/home/tanner/ros2_ws/install/my_robot_controller:/opt/ros/humble /usr/bin/cmake --install /home/tanner/dev_ws/src/roomba_bot/build/roomba_bot
+[15.712s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(roomba_bot)
+[15.720s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tanner/dev_ws/src/roomba_bot/build/roomba_bot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tanner/ros2_ws/install/actions_py:/home/tanner/ros2_ws/install/my_robot_controller:/opt/ros/humble /usr/bin/cmake --install /home/tanner/dev_ws/src/roomba_bot/build/roomba_bot
+[15.764s] Level 1:colcon.colcon_core.environment:checking '/home/tanner/dev_ws/src/roomba_bot/install/roomba_bot' for CMake module files
+[15.769s] Level 1:colcon.colcon_core.environment:checking '/home/tanner/dev_ws/src/roomba_bot/install/roomba_bot' for CMake config files
+[15.772s] Level 1:colcon.colcon_core.shell:create_environment_hook('roomba_bot', 'cmake_prefix_path')
+[15.773s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/roomba_bot/hook/cmake_prefix_path.ps1'
+[15.780s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/roomba_bot/hook/cmake_prefix_path.dsv'
+[15.789s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/roomba_bot/hook/cmake_prefix_path.sh'
+[15.795s] Level 1:colcon.colcon_core.environment:checking '/home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/bin'
+[15.795s] Level 1:colcon.colcon_core.environment:checking '/home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/lib/pkgconfig/roomba_bot.pc'
+[15.796s] Level 1:colcon.colcon_core.environment:checking '/home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/lib/python3.10/site-packages'
+[15.798s] Level 1:colcon.colcon_core.environment:checking '/home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/bin'
+[15.800s] INFO:colcon.colcon_core.shell:Creating package script '/home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/roomba_bot/package.ps1'
+[15.805s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/roomba_bot/package.dsv'
+[15.814s] INFO:colcon.colcon_core.shell:Creating package script '/home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/roomba_bot/package.sh'
+[15.821s] INFO:colcon.colcon_core.shell:Creating package script '/home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/roomba_bot/package.bash'
+[15.828s] INFO:colcon.colcon_core.shell:Creating package script '/home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/roomba_bot/package.zsh'
+[15.837s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/colcon-core/packages/roomba_bot)
+[15.844s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(roomba_bot)
+[15.845s] Level 1:colcon.colcon_core.environment:checking '/home/tanner/dev_ws/src/roomba_bot/install/roomba_bot' for CMake module files
+[15.848s] Level 1:colcon.colcon_core.environment:checking '/home/tanner/dev_ws/src/roomba_bot/install/roomba_bot' for CMake config files
+[15.850s] Level 1:colcon.colcon_core.shell:create_environment_hook('roomba_bot', 'cmake_prefix_path')
+[15.854s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/roomba_bot/hook/cmake_prefix_path.ps1'
+[15.857s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/roomba_bot/hook/cmake_prefix_path.dsv'
+[15.861s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/roomba_bot/hook/cmake_prefix_path.sh'
+[15.865s] Level 1:colcon.colcon_core.environment:checking '/home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/bin'
+[15.865s] Level 1:colcon.colcon_core.environment:checking '/home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/lib/pkgconfig/roomba_bot.pc'
+[15.867s] Level 1:colcon.colcon_core.environment:checking '/home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/lib/python3.10/site-packages'
+[15.868s] Level 1:colcon.colcon_core.environment:checking '/home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/bin'
+[15.870s] INFO:colcon.colcon_core.shell:Creating package script '/home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/roomba_bot/package.ps1'
+[15.873s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/roomba_bot/package.dsv'
+[15.877s] INFO:colcon.colcon_core.shell:Creating package script '/home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/roomba_bot/package.sh'
+[15.880s] INFO:colcon.colcon_core.shell:Creating package script '/home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/roomba_bot/package.bash'
+[15.884s] INFO:colcon.colcon_core.shell:Creating package script '/home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/roomba_bot/package.zsh'
+[15.886s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/colcon-core/packages/roomba_bot)
+[15.888s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[15.892s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[15.894s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[15.895s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[16.161s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[16.162s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[16.163s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[16.164s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[16.171s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+[16.172s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[16.173s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/tanner/dev_ws/src/roomba_bot/install/local_setup.ps1'
+[16.179s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/tanner/dev_ws/src/roomba_bot/install/_local_setup_util_ps1.py'
+[16.191s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/tanner/dev_ws/src/roomba_bot/install/setup.ps1'
+[16.202s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/tanner/dev_ws/src/roomba_bot/install/local_setup.sh'
+[16.208s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/tanner/dev_ws/src/roomba_bot/install/_local_setup_util_sh.py'
+[16.215s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/tanner/dev_ws/src/roomba_bot/install/setup.sh'
+[16.222s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/tanner/dev_ws/src/roomba_bot/install/local_setup.bash'
+[16.226s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/tanner/dev_ws/src/roomba_bot/install/setup.bash'
+[16.239s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/tanner/dev_ws/src/roomba_bot/install/local_setup.zsh'
+[16.242s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/tanner/dev_ws/src/roomba_bot/install/setup.zsh'

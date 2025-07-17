@@ -1,0 +1,1 @@
+/home/tanner/dev_ws/src/roomba_bot/build/roomba_bot/ament_cmake_environment_hooks/local_setup.sh

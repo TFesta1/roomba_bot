@@ -1,0 +1,67 @@
+[0.063s] Invoking command in '/home/tanner/dev_ws/src/roomba_bot/build/roomba_bot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tanner/ros2_ws/install/actions_py:/home/tanner/ros2_ws/install/my_robot_controller:/opt/ros/humble /usr/bin/cmake /home/tanner/dev_ws/src/roomba_bot -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/tanner/dev_ws/src/roomba_bot/install/roomba_bot
+[0.906s] -- The C compiler identification is GNU 11.4.0
+[3.917s] -- The CXX compiler identification is GNU 11.4.0
+[5.790s] -- Detecting C compiler ABI info
+[6.571s] -- Detecting C compiler ABI info - done
+[6.615s] -- Check for working C compiler: /usr/bin/cc - skipped
+[6.620s] -- Detecting C compile features
+[6.626s] -- Detecting C compile features - done
+[6.649s] -- Detecting CXX compiler ABI info
+[7.544s] -- Detecting CXX compiler ABI info - done
+[7.594s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[7.596s] -- Detecting CXX compile features
+[7.601s] -- Detecting CXX compile features - done
+[7.719s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[8.896s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[9.272s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[9.525s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[10.113s] -- Added test 'copyright' to check source files copyright and LICENSE
+[10.228s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[10.228s] -- Configured cppcheck include dirs: 
+[10.229s] -- Configured cppcheck exclude dirs and/or files: 
+[10.295s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[10.296s] -- Configured cpplint exclude dirs and/or files: 
+[10.310s] -- Added test 'flake8' to check Python code syntax and style conventions
+[10.332s] -- Added test 'lint_cmake' to check CMake code style
+[10.345s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[10.410s] -- Added test 'uncrustify' to check C / C++ code style
+[10.410s] -- Configured uncrustify additional arguments: 
+[10.422s] -- Added test 'xmllint' to check XML markup files
+[10.434s] -- Configuring done
+[10.453s] -- Generating done
+[10.461s] -- Build files have been written to: /home/tanner/dev_ws/src/roomba_bot/build/roomba_bot
+[10.486s] Invoked command in '/home/tanner/dev_ws/src/roomba_bot/build/roomba_bot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tanner/ros2_ws/install/actions_py:/home/tanner/ros2_ws/install/my_robot_controller:/opt/ros/humble /usr/bin/cmake /home/tanner/dev_ws/src/roomba_bot -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/tanner/dev_ws/src/roomba_bot/install/roomba_bot
+[10.503s] Invoking command in '/home/tanner/dev_ws/src/roomba_bot/build/roomba_bot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tanner/ros2_ws/install/actions_py:/home/tanner/ros2_ws/install/my_robot_controller:/opt/ros/humble /usr/bin/cmake --build /home/tanner/dev_ws/src/roomba_bot/build/roomba_bot -- -j20 -l20
+[10.708s] Invoked command in '/home/tanner/dev_ws/src/roomba_bot/build/roomba_bot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tanner/ros2_ws/install/actions_py:/home/tanner/ros2_ws/install/my_robot_controller:/opt/ros/humble /usr/bin/cmake --build /home/tanner/dev_ws/src/roomba_bot/build/roomba_bot -- -j20 -l20
+[10.762s] Invoking command in '/home/tanner/dev_ws/src/roomba_bot/build/roomba_bot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tanner/ros2_ws/install/actions_py:/home/tanner/ros2_ws/install/my_robot_controller:/opt/ros/humble /usr/bin/cmake --install /home/tanner/dev_ws/src/roomba_bot/build/roomba_bot
+[10.789s] -- Install configuration: ""
+[10.794s] -- Execute custom install script
+[10.803s] -- Symlinking: /home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/roomba_bot/config/empty.yaml
+[10.848s] -- Symlinking: /home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/roomba_bot/config/view_bot.rviz
+[10.886s] -- Symlinking: /home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/roomba_bot/description/gazebo_control.xacro
+[10.933s] -- Symlinking: /home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/roomba_bot/description/inertial_macros.xacro
+[10.989s] -- Symlinking: /home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/roomba_bot/description/lidar.xacro
+[11.031s] -- Symlinking: /home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/roomba_bot/description/properties.xacro
+[11.076s] -- Symlinking: /home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/roomba_bot/description/robot.urdf.xacro
+[11.111s] -- Symlinking: /home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/roomba_bot/description/robot_core.xacro
+[11.155s] -- Symlinking: /home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/roomba_bot/launch/launch_sim.launch.py
+[11.206s] -- Symlinking: /home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/roomba_bot/launch/rsp.launch.py
+[11.254s] -- Symlinking: /home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/roomba_bot/worlds/drive_bot.rviz
+[11.302s] -- Symlinking: /home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/roomba_bot/worlds/empty.world
+[11.348s] -- Symlinking: /home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/roomba_bot/worlds/obstacles.world
+[11.395s] -- Symlinking: /home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/ament_index/resource_index/package_run_dependencies/roomba_bot
+[11.448s] -- Symlinking: /home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/ament_index/resource_index/parent_prefix_path/roomba_bot
+[11.492s] -- Symlinking: /home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/roomba_bot/environment/ament_prefix_path.sh
+[11.539s] -- Symlinking: /home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/roomba_bot/environment/ament_prefix_path.dsv
+[11.592s] -- Symlinking: /home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/roomba_bot/environment/path.sh
+[11.645s] -- Symlinking: /home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/roomba_bot/environment/path.dsv
+[11.694s] -- Symlinking: /home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/roomba_bot/local_setup.bash
+[11.736s] -- Symlinking: /home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/roomba_bot/local_setup.sh
+[11.786s] -- Symlinking: /home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/roomba_bot/local_setup.zsh
+[11.850s] -- Symlinking: /home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/roomba_bot/local_setup.dsv
+[11.910s] -- Symlinking: /home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/roomba_bot/package.dsv
+[11.963s] -- Symlinking: /home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/ament_index/resource_index/packages/roomba_bot
+[12.016s] -- Symlinking: /home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/roomba_bot/cmake/roomba_botConfig.cmake
+[12.082s] -- Symlinking: /home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/roomba_bot/cmake/roomba_botConfig-version.cmake
+[12.151s] -- Symlinking: /home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/roomba_bot/package.xml
+[12.224s] Invoked command in '/home/tanner/dev_ws/src/roomba_bot/build/roomba_bot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tanner/ros2_ws/install/actions_py:/home/tanner/ros2_ws/install/my_robot_controller:/opt/ros/humble /usr/bin/cmake --install /home/tanner/dev_ws/src/roomba_bot/build/roomba_bot

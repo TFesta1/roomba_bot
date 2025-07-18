@@ -22,6 +22,7 @@ def generate_launch_description():
     midas_input_topic   = LaunchConfiguration('midas_input_topic')
     midas_output_topic  = LaunchConfiguration('midas_output_topic')
     image_topic         = LaunchConfiguration('image_topic')
+    compressed_topic    = LaunchConfiguration('compressed_topic')
     info_topic          = LaunchConfiguration('info_topic')
     scan_topic          = LaunchConfiguration('scan_topic')
     scan_frame_id       = LaunchConfiguration('scan_frame_id')
@@ -128,6 +129,27 @@ def generate_launch_description():
         parameters=[{'use_sim_time': use_sim_time}]
     )
 
+    """
+    ros2 run image_transport republish raw compressed \
+        --ros-args \
+            -r in:=/camera/image_raw \
+            -r out:=/camera/compressed
+
+    """
+
+    republish_node = Node(
+            package='image_transport',
+            executable='republish',
+            name='republish_raw_to_compressed',
+            output='screen',
+            parameters=[{'use_sim_time': use_sim_time}],
+            arguments=['raw', 'compressed'],
+            remappings=[
+                ('in', image_topic),
+                ('out', compressed_topic),
+            ],
+        )
+
     return LaunchDescription([
         # Arguments for simulation time
         DeclareLaunchArgument(
@@ -177,6 +199,10 @@ def generate_launch_description():
             'image_topic',
             default_value='/camera/image_raw',
             description='Input image topic for scanners'),
+         DeclareLaunchArgument(
+            'compressed_topic',
+            default_value='/camera/compressed',
+            description='Output compressed image topic for scanners'),
         DeclareLaunchArgument(
             'info_topic',
             default_value='/camera/camera_info',
@@ -197,10 +223,14 @@ def generate_launch_description():
             'max_range',
             default_value='5.0',
             description='Maximum range for LaserScan'),
+        
+        
+
 
         # Launch all nodes
         node_robot_state_publisher,
         node_esp32_cam,
+        republish_node,
         node_midas,
         node_cam2scan,
         rviz_node,

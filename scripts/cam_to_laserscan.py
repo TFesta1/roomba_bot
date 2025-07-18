@@ -20,7 +20,7 @@ class CamToLaserScan(Node):
         self.declare_parameter('min_range',          0.2)
         self.declare_parameter('max_range',          5.0)
         # How dark a pixel must be to count as "obstacle" (0–255)
-        self.declare_parameter('obstacle_threshold', 50)
+        self.declare_parameter('obstacle_threshold', 40) #45
         # If >0, overrides computed FOV (radians)
         self.declare_parameter('horizontal_fov',     0.94)
 

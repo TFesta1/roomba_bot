@@ -3,7 +3,7 @@ import os
 
 from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription
-from launch.substitutions import LaunchConfiguration
+from launch.substitutions import LaunchConfiguration, Command
 from launch.actions import DeclareLaunchArgument
 from launch_ros.actions import Node
 
@@ -14,6 +14,7 @@ def generate_launch_description():
 
     # Launch arguments
     use_sim_time        = LaunchConfiguration('use_sim_time')
+    use_ros2_control    = LaunchConfiguration('use_ros2_control')
     url                 = LaunchConfiguration('url')
     frame_id            = LaunchConfiguration('frame_id')
     fps                 = LaunchConfiguration('fps')
@@ -31,7 +32,8 @@ def generate_launch_description():
 
     # Process the robot URDF
     xacro_file = os.path.join(pkg_share, 'description', 'robot.urdf.xacro')
-    robot_description_config = xacro.process_file(xacro_file)
+    # robot_description_config = xacro.process_file(xacro_file).toxml()
+    robot_description_config = Command(['xacro ', xacro_file, ' use_ros2_control:=', use_ros2_control])
 
     # Nodes
     node_robot_state_publisher = Node(
@@ -40,7 +42,7 @@ def generate_launch_description():
         name='robot_state_publisher',
         output='screen',
         parameters=[{
-            'robot_description': robot_description_config.toxml(),
+            'robot_description': robot_description_config,
             'use_sim_time': use_sim_time
         }]
     )
@@ -156,6 +158,11 @@ def generate_launch_description():
             'use_sim_time',
             default_value='false',
             description='Use simulation (Gazebo) clock'),
+        
+        DeclareLaunchArgument(
+            'use_ros2_control',
+            default_value='true',
+            description='Use ros2 control if true'),
 
         # ESP32-CAM node args
         DeclareLaunchArgument(

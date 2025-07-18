@@ -21,6 +21,7 @@ class ESP32CamHTTP(Node):
         self.frame_id = self.get_parameter('frame_id').value
         fps           = self.get_parameter('fps').value
         info_url      = self.get_parameter('camera_info_url').value
+        self.print_once = True
         # print(info_url)
 
         # Publishers
@@ -57,7 +58,9 @@ class ESP32CamHTTP(Node):
 
             self.img_pub.publish(ros_img)
             self.ci_pub.publish(ci)
-            self.get_logger().info(f'Successfully published to camera/image_raw and camera/camera_info from http://192.168.0.84/cam-hi.jpg')
+            if self.print_once:
+                self.get_logger().info(f'Successfully published to camera/image_raw and camera/camera_info from http://192.168.0.84/cam-hi.jpg')
+                self.print_once = False
 
         except Exception as e:
             self.get_logger().info(f'Failed to fetch or publish image: {e}')

@@ -213,7 +213,7 @@ def generate_launch_description():
             description='Output LaserScan topic'),
         DeclareLaunchArgument(
             'scan_frame_id',
-            default_value='base_link',
+            default_value='camera_link_optical',
             description='Frame ID for LaserScan'),
         DeclareLaunchArgument(
             'min_range',

@@ -39,7 +39,7 @@ def generate_launch_description():
     gazebo = IncludeLaunchDescription(
     PythonLaunchDescriptionSource(os.path.join(
         get_package_share_directory('gazebo_ros'), 'launch', 'gazebo.launch.py')),
-        launch_arguments={'gui': 'false'}.items()  # or false for headless
+        launch_arguments={'gui': 'true'}.items()  # or false for headless
     )
 
 
@@ -52,6 +52,18 @@ def generate_launch_description():
     spawn_entity_delayed = TimerAction(
         period=0.0,# seconds
         actions=[spawn_entity]
+    )
+
+    diff_drive_spawner = Node(
+        package="controller_manager",
+        executable="spawner",
+        arguments=['diff_cont']
+    )
+
+    joint_broad_spawner = Node(
+        package="controller_manager",
+        executable="spawner",
+        arguments=['joint_broad']
     )
 
     
@@ -76,6 +88,8 @@ def generate_launch_description():
         mute_audio,
         rsp,
         gazebo,
-        spawn_entity_delayed #spawn_entity
+        spawn_entity_delayed, #spawn_entity
         # display
+        diff_drive_spawner,
+        joint_broad_spawner
     ])

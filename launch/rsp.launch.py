@@ -229,9 +229,9 @@ def generate_launch_description():
 
         # Launch all nodes
         node_robot_state_publisher,
-        node_esp32_cam,
-        republish_node,
-        node_midas,
-        node_cam2scan,
-        rviz_node,
+        # node_esp32_cam,
+        # republish_node,
+        # node_midas,
+        # node_cam2scan,
+        # rviz_node,
     ])

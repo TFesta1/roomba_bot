@@ -73,6 +73,14 @@ class RoombaBridge(Node):
         self.create_timer(1.0/50.0, self.poll_encoders)
 
         self.get_logger().info(f"RoombaBridge up. ESP32 at {self.base_url}")
+        """
+        k = stop
+        i = forward
+        , = backward
+        j = rotate left
+        l = rotate right
+
+        """
 
     def twist_callback(self, msg: Twist):
         """
@@ -137,7 +145,8 @@ class RoombaBridge(Node):
 
             # average forward distance, and change in heading
             ds     = (dist_left + dist_right) / 2.0
-            dtheta = (dist_right - dist_left) / self.wheel_separation
+            # dtheta = (dist_right - dist_left) / self.wheel_separation
+            dtheta = (dist_left - dist_right) / self.wheel_separation
 
             # integrate pose
             self.theta += dtheta
@@ -180,7 +189,8 @@ class RoombaBridge(Node):
             self.tf_broadcaster.sendTransform(t)
 
         except (RequestException, ValueError) as e:
-            self.get_logger().warn(f"Encoder poll failed: {e}")
+            # self.get_logger().warn(f"Encoder poll failed: {e}")
+            pass
 
     def send_control(self, var: str, val: int):
         url = f"{self.base_url}/control?var={var}&val={val}"

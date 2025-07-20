@@ -3,30 +3,26 @@
     <xacro:unless value="$(arg sim_mode)">
         <ros2_control name="RealRobot" type="system">
             <hardware>
-                <plugin>diffdrive_esp/DiffDriveEsp</plugin>
-                <param name="left_wheel_name">left_wheel_joint</param>
-                <param name="right_wheel_name">right_wheel_joint</param>
-                <param name="loop_rate">30</param> 
-                <param name="device">/dev/ttyUSB0</param>
-                <param name="baud_rate">115200</param>
-                <!-- Serial_timeout 1000 = 1ms -->
-                <param name="timeout">1000</param>
-                <!-- Wheel revolutions, you'll need to modify this to match it -->
-                <param name="enc_counts_per_rev">3450</param>
+                <!-- Pulling our data from the robot itself with commands like /encoders -->
+                <plugin>fake_components/GenericSystem</plugin>
+                <!-- publish_rate controls how often the “fake” system polls for/advertises state -->
+                <param name="publish_rate">30</param>
+                <!-- tell it which joints exist -->
+                <param name="joint_names">['left_wheel_joint', 'right_wheel_joint']</param>
             </hardware>
             <joint name="left_wheel_joint">
-                <command_interface name="velocity">
-                    <param name="min">-10</param>
+                <command_interface name="velocity"/>
+                    <!-- <param name="min">-10</param>
                     <param name="max">10</param>
-                </command_interface>
+                </command_interface> -->
                 <state_interface name="velocity"/>
                 <state_interface name="position"/>
             </joint>
             <joint name="right_wheel_joint">
-                <command_interface name="velocity">
-                    <param name="min">-10</param>
-                    <param name="max">10</param>
-                </command_interface>
+                <command_interface name="velocity"/>
+                    <!-- <param name="min">-10</param>
+                    <param name="max">10</param> -->
+                <!-- </command_interface> -->
                 <state_interface name="velocity"/>
                 <state_interface name="position"/>
             </joint>

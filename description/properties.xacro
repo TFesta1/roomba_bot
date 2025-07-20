@@ -3,8 +3,8 @@
 
     <xacro:property name="chassis_radius"   value="0.1778"/>   <!-- 7 in = 0.1778 m -->
     <xacro:property name="chassis_thick"    value="0.05"/>     <!-- chassis height -->
-    <xacro:property name="wheel_radius"     value="0.035"/>    <!-- ~70 mm dia. 0.035 -->
-    <xacro:property name="wheel_width"      value="0.065"/>      <!-- 0.01 -->
+    <xacro:property name="wheel_radius"     value="0.0301625"/>    <!-- ~70 mm dia. 0.035 meters -->
+    <xacro:property name="wheel_width"      value="0.01905"/>      <!-- 0.01 -->
     <xacro:property name="wheel_y_offset"   value="0.14"/>     <!-- offset from center  0.16-->
     <xacro:property name="caster_radius"    value="0.02"/> <!--0.02 -->
     <!-- <xacro:property name="max_wheel_movement_down" value="${(chassis_radius*chassis_radius) - (wheel_y_offset*wheel_y_offset)}"/> -->

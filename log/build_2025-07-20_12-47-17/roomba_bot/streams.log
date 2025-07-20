@@ -1,0 +1,46 @@
+[0.020s] Invoking command in '/home/tanner/dev_ws/src/roomba_bot/build/roomba_bot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tanner/ros2_ws/install/actions_py:/home/tanner/ros2_ws/install/my_robot_controller:/opt/ros/humble /usr/bin/cmake --build /home/tanner/dev_ws/src/roomba_bot/build/roomba_bot -- -j20 -l20
+[0.084s] Invoked command in '/home/tanner/dev_ws/src/roomba_bot/build/roomba_bot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tanner/ros2_ws/install/actions_py:/home/tanner/ros2_ws/install/my_robot_controller:/opt/ros/humble /usr/bin/cmake --build /home/tanner/dev_ws/src/roomba_bot/build/roomba_bot -- -j20 -l20
+[0.099s] Invoking command in '/home/tanner/dev_ws/src/roomba_bot/build/roomba_bot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tanner/ros2_ws/install/actions_py:/home/tanner/ros2_ws/install/my_robot_controller:/opt/ros/humble /usr/bin/cmake --install /home/tanner/dev_ws/src/roomba_bot/build/roomba_bot
+[0.108s] -- Install configuration: ""
+[0.109s] -- Execute custom install script
+[0.110s] -- Up-to-date symlink: /home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/roomba_bot/config/empty.yaml
+[0.110s] -- Up-to-date symlink: /home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/roomba_bot/config/gaz_ros2_ctl_use_sim.yaml
+[0.111s] -- Up-to-date symlink: /home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/roomba_bot/config/gazebo_params.yaml
+[0.111s] -- Up-to-date symlink: /home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/roomba_bot/config/laser_bot.rviz
+[0.111s] -- Up-to-date symlink: /home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/roomba_bot/config/main.rviz
+[0.111s] -- Up-to-date symlink: /home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/roomba_bot/config/my_controllers.yaml
+[0.111s] -- Up-to-date symlink: /home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/roomba_bot/config/view_bot.rviz
+[0.112s] -- Up-to-date symlink: /home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/roomba_bot/description/camera.xacro
+[0.112s] -- Up-to-date symlink: /home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/roomba_bot/description/gazebo_control.xacro
+[0.112s] -- Up-to-date symlink: /home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/roomba_bot/description/inertial_macros.xacro
+[0.112s] -- Up-to-date symlink: /home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/roomba_bot/description/lidar.xacro
+[0.113s] -- Up-to-date symlink: /home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/roomba_bot/description/properties.xacro
+[0.113s] -- Up-to-date symlink: /home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/roomba_bot/description/robot.urdf.xacro
+[0.113s] -- Up-to-date symlink: /home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/roomba_bot/description/robot_core.xacro
+[0.113s] -- Up-to-date symlink: /home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/roomba_bot/description/ros2_control.xacro
+[0.113s] -- Up-to-date symlink: /home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/roomba_bot/launch/launch_robot.launch.py
+[0.114s] -- Up-to-date symlink: /home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/roomba_bot/launch/launch_sim.launch.py
+[0.114s] -- Up-to-date symlink: /home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/roomba_bot/launch/rsp.launch.py
+[0.114s] -- Up-to-date symlink: /home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/roomba_bot/worlds/drive_bot.rviz
+[0.115s] -- Up-to-date symlink: /home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/roomba_bot/worlds/empty.world
+[0.115s] -- Up-to-date symlink: /home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/roomba_bot/worlds/obstacles.world
+[0.115s] -- Up-to-date symlink: /home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/lib/roomba_bot/esp32_cam_http.py
+[0.115s] -- Up-to-date symlink: /home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/lib/roomba_bot/midas_depth.py
+[0.115s] -- Up-to-date symlink: /home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/lib/roomba_bot/cam_to_laserscan.py
+[0.116s] -- Up-to-date symlink: /home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/lib/roomba_bot/roomba_bot_bridge.py
+[0.116s] -- Up-to-date symlink: /home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/ament_index/resource_index/package_run_dependencies/roomba_bot
+[0.116s] -- Up-to-date symlink: /home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/ament_index/resource_index/parent_prefix_path/roomba_bot
+[0.116s] -- Up-to-date symlink: /home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/roomba_bot/environment/ament_prefix_path.sh
+[0.117s] -- Up-to-date symlink: /home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/roomba_bot/environment/ament_prefix_path.dsv
+[0.117s] -- Up-to-date symlink: /home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/roomba_bot/environment/path.sh
+[0.117s] -- Up-to-date symlink: /home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/roomba_bot/environment/path.dsv
+[0.118s] -- Up-to-date symlink: /home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/roomba_bot/local_setup.bash
+[0.118s] -- Up-to-date symlink: /home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/roomba_bot/local_setup.sh
+[0.118s] -- Up-to-date symlink: /home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/roomba_bot/local_setup.zsh
+[0.118s] -- Up-to-date symlink: /home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/roomba_bot/local_setup.dsv
+[0.118s] -- Symlinking: /home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/roomba_bot/package.dsv
+[0.130s] -- Up-to-date symlink: /home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/ament_index/resource_index/packages/roomba_bot
+[0.131s] -- Up-to-date symlink: /home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/roomba_bot/cmake/roomba_botConfig.cmake
+[0.131s] -- Up-to-date symlink: /home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/roomba_bot/cmake/roomba_botConfig-version.cmake
+[0.131s] -- Up-to-date symlink: /home/tanner/dev_ws/src/roomba_bot/install/roomba_bot/share/roomba_bot/package.xml
+[0.134s] Invoked command in '/home/tanner/dev_ws/src/roomba_bot/build/roomba_bot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tanner/ros2_ws/install/actions_py:/home/tanner/ros2_ws/install/my_robot_controller:/opt/ros/humble /usr/bin/cmake --install /home/tanner/dev_ws/src/roomba_bot/build/roomba_bot

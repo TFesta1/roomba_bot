@@ -313,6 +313,9 @@ message(STATUS "Execute custom install script")
 # install(DIRECTORY "config" "description" "launch" "worlds" "DESTINATION" "share/roomba_bot")
 ament_cmake_symlink_install_directory("/home/tanner/dev_ws/src/roomba_bot" DIRECTORY "config" "description" "launch" "worlds" "DESTINATION" "share/roomba_bot")
 
+# install(PROGRAMS "scripts/esp32_cam_http.py" "scripts/midas_depth.py" "scripts/cam_to_laserscan.py" "scripts/roomba_bot_bridge.py" "DESTINATION" "lib/roomba_bot")
+ament_cmake_symlink_install_programs("/home/tanner/dev_ws/src/roomba_bot" PROGRAMS "scripts/esp32_cam_http.py" "scripts/midas_depth.py" "scripts/cam_to_laserscan.py" "scripts/roomba_bot_bridge.py" "DESTINATION" "lib/roomba_bot")
+
 # install(FILES "/home/tanner/dev_ws/src/roomba_bot/build/roomba_bot/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/roomba_bot" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 ament_cmake_symlink_install_files("/home/tanner/dev_ws/src/roomba_bot" FILES "/home/tanner/dev_ws/src/roomba_bot/build/roomba_bot/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/roomba_bot" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 

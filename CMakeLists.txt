@@ -26,6 +26,7 @@ find_package(camera_info_manager REQUIRED)
 find_package(cv_bridge REQUIRED)
 find_package(image_transport REQUIRED)
 find_package(OpenCV REQUIRED)
+# find_package(requests REQUIRED)
 # find_package(camera_info_manager_py REQUIRED)
 
 if(BUILD_TESTING)
@@ -49,6 +50,7 @@ install(
     scripts/esp32_cam_http.py
     scripts/midas_depth.py
     scripts/cam_to_laserscan.py
+    scripts/roomba_bot_bridge.py
   DESTINATION lib/${PROJECT_NAME}
 )
 

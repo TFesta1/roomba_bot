@@ -64,6 +64,16 @@
     <material>Gazebo/Grey</material>
     <gravity>false</gravity>
   </gazebo>
+
+  <joint name="base_footprint_joint" type="fixed">
+        <parent link="base_link"/>
+        <child link="base_footprint"/>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+    </joint>
+
+  <link name="base_footprint">
+  </link>
+
   <!--=== LEFT WHEEL ===-->
   <!-- base_link then left_wheel_joint then left_wheel -->
   <!-- This deals with position ONLY, relative to parent (need both joint/link to define position of rigid body) -->

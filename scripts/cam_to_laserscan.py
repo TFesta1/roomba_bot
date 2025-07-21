@@ -72,6 +72,7 @@ class CamToLaserScan(Node):
         scan.range_min       = self.min_range
         scan.range_max       = self.max_range
         scan.ranges          = [float('inf')] * width
+        scan.ranges.append(float('inf')) #Range is 641 instead of 640
 
         # Obstacle segmentation using threshold
         gray = cv2.cvtColor(cv_img, cv2.COLOR_BGR2GRAY)

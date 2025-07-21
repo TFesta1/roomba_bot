@@ -120,6 +120,13 @@ def generate_launch_description():
             'use_sim_time': use_sim_time
         }]
     )
+
+    node_bot_bridge = Node(
+        package='roomba_bot',
+        executable='roomba_bot_bridge.py',
+        name='roomba_bot_bridge',
+        output='screen',
+    )
     """
     rviz2
     """
@@ -236,9 +243,10 @@ def generate_launch_description():
 
         # Launch all nodes
         node_robot_state_publisher,
-        # node_esp32_cam,
-        # republish_node,
-        # node_midas,
-        # node_cam2scan,
+        node_esp32_cam,
+        republish_node,
+        node_midas,
+        node_cam2scan,
+        node_bot_bridge,
         # rviz_node,
     ])
